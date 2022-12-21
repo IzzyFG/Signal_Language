@@ -16,7 +16,7 @@
 1. Clone the repo
 
     ```console
-    git clone https://github.com/IzzyFG/PLT_Signal
+    git clone https://github.com/IzzyFG/Signal
     ```
 
 2. Install the required packages
