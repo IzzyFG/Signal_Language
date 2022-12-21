@@ -1,0 +1,32 @@
+/* The TEST source code in Signal that should fail because of syntax error */
+
+var int a;
+var int b;
+
+var string str;
+
+int gcd(var int a, var int b) {
+  while (a != b) {
+    if (b < a) a = a - b;
+    else b = b - a;
+  }
+  return a;
+}
+
+func int main() {
+  var int x;
+  var int y;
+
+  a = 18;
+  b = 9;
+  x = 2;
+  y = 14;
+  print(gcd(x,y));
+  print(gcd(3,15));
+  print(gcd(99,121));
+  print(gcd(a,b));
+  
+  /* print_str(str); */
+
+  return 0;
+}
