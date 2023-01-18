@@ -16,7 +16,7 @@
 1. Clone the repo
 
     ```console
-    git clone https://github.com/IzzyFG/Signal
+    git clone https://github.com/IzzyFG/Signal_Language.git
     ```
 
 2. Install the required packages
@@ -41,7 +41,7 @@
 4. Then go into the Compiler directory
 
     ```console
-    cd PLT_Signal
+    cd Signal_Language/src
     ```
 
 ## Running the compiler

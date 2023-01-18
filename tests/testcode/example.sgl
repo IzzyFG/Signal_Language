@@ -1,0 +1,73 @@
+/* The TEST source code in Signal that should pass */
+
+var int a;
+var int b;
+
+var string str;
+var char ch;
+var float z;
+
+func void print10times(var int x) {
+  var int i;
+  prints("Loop Iterations: ");
+  for (i = 1; i <= 10; i = i + 1) do {
+    printi(i);
+  }
+}
+
+func int gcd(var int a, var int b) {
+  while (a != b) do {
+    if (b < a) do {
+      a = a - b;
+    }
+    else do {
+      b = b - a;
+    }
+  }
+  return a;
+}
+
+func int main() {
+  var int x;
+  var int y;
+  var float v;
+
+  z = 3.14153265;
+  v = 1.1;
+  ch = 'd';
+  str = "coms w4115";
+  
+  a = 18;
+  b = 9;
+  x = 2;
+  y = 14;
+  
+  prints("Testing function print10times(): ");
+  print10times(x);
+
+  prints("Testing char printing: ");
+  printc(ch);
+
+  prints("Testing float printing: ");
+  printf(z);
+
+  prints("Testing string printing: ");
+  prints(str);
+
+  prints("Testing int addition: ");
+  printi(x + y);
+
+  prints("Testing float addition: ");
+  printf(z + v);
+
+  prints("Testing float multiplication: ");
+  printf(z * v);
+
+  prints("Testing function gcd(): ");
+  printi(gcd(x,y));
+  printi(gcd(3,15));
+  printi(gcd(99,121));
+  printi(gcd(a,b));
+
+  return 0;
+}

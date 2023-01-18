@@ -8,7 +8,7 @@ all : signal.native
 
 signal.native :
 	opam exec -- \
-	ocamlbuild -pkgs llvm signal.native
+	ocamlbuild -pkgs llvm src/signal.native
 
 # "make clean" removes all generated files
 
